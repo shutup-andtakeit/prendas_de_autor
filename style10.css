@@ -10,3 +10,28 @@ body {
     grid-template-columns: 33% 33% 33%;
 
 } */
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+ 
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-rounded:hover{
+    filter: opacity(.5);}
+
+
+    
