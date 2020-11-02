@@ -8,30 +8,54 @@ body {
 /* .grid {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+*/
 
-} */
+.contenedor {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+}
 
-.contenedor{
+.contenedor figure{
     position: relative;
-    display: inline-block;
-    text-align: center;
+}
 
+.contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out
+}
+
+.contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(black);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover .capa {
+opacity: 1;
+visibility: visible;
+margin-top: 275px;
+margin-bottom: 15px;
+color: whitesmoke;
+transition: all 500ms ease-out;
+
+}
+
+h1 {
+    color: whitesmoke;
+    text-shadow: #555 2px 2px 3px;
+    text-decoration: none;
+  }
+
+  a:link, a:visited, a:active {
+    text-decoration:none;
 }
  
-.texto-encima{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.img-rounded:hover{
-    filter: opacity(.5);}
-
-
-    
